@@ -1,0 +1,104 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <body>
+    <div class="image-center">
+      <img
+        src="https://storage.googleapis.com/bfb-qa2/b2b-store-front-external-ui/1.7.0-4/static/img/businessForBlibliLogo-7624f499.svg"
+        alt="bfb"
+      />
+    </div>
+    <div class="container">
+      <div class="container-header">
+        <h3>Verifikasi email Anda</h3>
+      </div>
+      <div class="container-box">
+        <h3>Halo, ${userName}!</h3>
+        <div class="container-content">
+          Terima kasih sudah mendaftar di Blibli for Business.
+        </div>
+        <div class="container-content">
+          Klik link berikut untuk melakukan verifikasi email dan menyelesaikan
+          pendaftaran perusahaan Anda.
+        </div>
+        <div class="link-to-direct">
+          <span class="redirect-btn">
+            <a
+              href="https://business-blibli-qa1-gcp.gdn-app.com/"
+              target="_blank"
+              >Verifikasi</a
+            >
+          </span>
+        </div>
+        <div class="bottom-title">Blibli for Business</div>
+        <div class="bottom-title-text">
+          <div>Email ini dibuat otomatis, mohon tidak membalas.</div>
+          <div>
+            Jika butuh bantuan, silakan hubungi Sales Representative kami.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style scoped lang="scss">
+  * {
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+  }
+  .image-center {
+    margin: 0 45%;
+  }
+  .container {
+    background: #f8f8f8;
+    height: 1000px;
+  }
+  .container-header {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 2px;
+    max-width: auto;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .container-box {
+    background: #ffffff;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px 20px;
+    width: 660px;
+    max-width: auto;
+  }
+  .container-content {
+    max-width: 75%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .link-to-direct {
+    text-align: center;
+    height: 48px;
+    padding: 14px 12px;
+  }
+  .bottom-title {
+    padding-bottom: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .bottom-title-text {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .redirect-btn {
+    border-radius: 16px;
+    background: var(--blue-blu-blue, #0095da);
+    padding: 14px 12px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+</style>

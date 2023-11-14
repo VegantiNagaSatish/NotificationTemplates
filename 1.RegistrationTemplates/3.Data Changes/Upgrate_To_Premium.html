@@ -1,0 +1,170 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <body>
+    <div class="container">
+      <div class="container-header d-flex justify-content-center align-center">
+        <img
+          src="https://storage.googleapis.com/bfb-qa2/b2b-store-front-external-ui/latest/static/img/blibli-for-business-5aa317e3.svg"
+          alt="Image_Not_Found"
+          class="container-header-logo"
+        />
+      </div>
+      <div class="container-content d-flex justify-content-center">
+        <div class="container-content-info d-flex flex-direction-column">
+          <div class="container-content-info-heading">
+            Lengkapi dokumen perusahaan
+          </div>
+          <div
+            class="container-content-info-details d-flex flex-direction-column"
+          >
+            <div class="main d-flex flex-direction-column">
+              <div class="main-details d-flex flex-direction-column">
+                <div class="main-details-heading">Halo, {RM name}!</div>
+                <div class="main-details-content">
+                  <span class="main-details-content-bold">${userName}</span>
+                  baru saja mengajukan permintaan untuk upgrade akun ke
+                  premium.<br /><br />
+                  Mohon bantu perusahaan untuk melengkapi dokumen yang
+                  diperlukan. Setelah itu, perubahan akun ke premium dapat
+                  diproses oleh tim Legal dan Finance.
+                </div>
+              </div>
+              <div class="navigation d-flex justify-content-center">
+                <a
+                  class="navigation-link"
+                  href="https://business-blibli-qa2-gcp.gdn-app.com/rfqDetailPage/${rfqId}"
+                  target="_blank"
+                  >Lengkapi sekarang</a
+                >
+              </div>
+            </div>
+            <div class="bfb font-helvetica">Blibli for Business</div>
+            <div class="automated-email-message font-helvetica">
+              Email ini dibuat otomatis, mohon tidak membalas.<br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  .container {
+    width: 720px;
+    height: 484px;
+    margin: auto;
+  }
+  .container-header {
+    width: 720px;
+    height: 68px;
+    border: 0px 0px 1px 0px;
+  }
+  .container-header-logo {
+    width: 180px;
+    height: 40px;
+  }
+  .container-content {
+    width: 720px;
+    height: 424px;
+    background-color: rgba(248, 248, 248, 1);
+    padding-top: 40px;
+  }
+  .container-content-info {
+    width: 660px;
+    height: 324px;
+  }
+  .container-content-info-heading {
+    width: 660px;
+    height: 28px;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .container-content-info-details {
+    width: 660px;
+    padding: 16px 0px 0px 0px;
+    border-radius: 20px;
+    background: #ffffff;
+  }
+  .main {
+    height: 180px;
+    width: 660px;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    margin-bottom: 24px;
+  }
+  .main-details {
+    padding: 0px 16px;
+    margin-bottom: 16px;
+  }
+  .main-details-heading {
+    height: 20px;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .main-details-content {
+    color: #00000099;
+    font-family: Helvetica;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: 400;
+  }
+  .main-details-content-bold {
+    font-weight: 700;
+  }
+  .navigation {
+    height: 48px;
+  }
+  .navigation-link {
+    color: rgba(255, 255, 255, 1);
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 12px;
+    border-radius: 8px;
+    background-color: #0095da;
+  }
+  .bfb {
+    height: 16px;
+    padding: 0px 16px;
+    color: #00000061;
+    margin-bottom: 8px;
+  }
+  .automated-email-message {
+    height: 32px;
+    padding: 0px 16px;
+    color: #00000061;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .justify-content-center {
+    justify-content: center;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .flex-direction-column {
+    flex-direction: column;
+  }
+  .font-helvetica {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+</style>
