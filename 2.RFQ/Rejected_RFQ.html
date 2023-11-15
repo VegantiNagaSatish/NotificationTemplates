@@ -3,42 +3,38 @@
     <div class="container">
       <div class="container-header d-flex justify-content-center align-center">
         <img
-          src="https://storage.googleapis.com/bfb-qa2/b2b-store-front-external-ui/latest/static/img/blibli-for-business-5aa317e3.svg"
-          alt="Image_Not_Found"
+          src="https://storage.googleapis.com/bfb-catalog-qa2/Blibli-For-Business_Logo.png"
+          alt="Image_Loading_Failed"
           class="container-header-logo"
         />
       </div>
       <div class="container-content d-flex justify-content-center align-center">
         <div class="container-content-info d-flex flex-direction-column">
-          <div class="container-content-info-heading">RFQ perlu diperiksa</div>
+          <div class="container-content-info-heading">
+            RFQ Anda belum dapat diproses
+          </div>
           <div
             class="container-content-info-details d-flex flex-direction-column"
           >
             <div class="main d-flex flex-direction-column">
               <div class="main-details d-flex flex-direction-column">
-                <div class="main-details-heading">Halo, ${rmName}!</div>
+                <div class="main-details-heading">Halo ${username},</div>
                 <div class="main-details-content">
-                  Segera periksa dan proses RFQ baru dari
-                  <span class="main-details-content-bold">${username}</span
-                  ><br /><br />
+                  Saat ini, Request for Quotation (RFQ) yang Anda kirim belum
+                  dapat diproses oleh tim Blibli for Business.<br /><br />
                   <span class="main-details-content-bold">Nama RFQ:</span>
                   ${rfqName}<br />
                   <span class="main-details-content-bold">Nomor RFQ:</span>
-                  ${rfqId}
+                  ${rfqId} <br /><br />
+                  Tenang, Anda bisa mengirim RFQ baru kapan saja untuk penuhi
+                  kebutuhan perusahaan Anda.
                 </div>
-              </div>
-              <div class="navigation d-flex justify-content-center">
-                <a
-                  class="navigation-link"
-                  href="https://business-blibli-qa2-gcp.gdn-app.com/rfqDetailPage/${rfqId}"
-                  target="_blank"
-                  >Lihat RFQ</a
-                >
               </div>
             </div>
             <div class="bfb font-helvetica">Blibli for Business</div>
             <div class="automated-email-message font-helvetica">
               Email ini dibuat otomatis, mohon tidak membalas.<br />
+              Jika butuh bantuan, silakan hubungi Sales Representative kami.
             </div>
           </div>
         </div>
@@ -83,12 +79,12 @@
   }
   .container-content-info-details {
     width: 660px;
-    padding: 16px 0px 0px 0px;
+    padding: 16px 0px 16px 0px;
     border-radius: 20px;
     background: #ffffff;
   }
   .main {
-    height: 180px;
+    height: 148px;
     width: 660px;
     border-bottom: 1px solid rgba(224, 224, 224, 1);
     margin-bottom: 24px;
@@ -108,6 +104,7 @@
     margin-bottom: 16px;
   }
   .main-details-content {
+    height: 96px;
     color: #00000099;
     font-family: Helvetica;
     font-size: 12px;
@@ -138,7 +135,7 @@
     height: 16px;
     padding: 0px 16px;
     color: #00000061;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
   }
   .automated-email-message {
     height: 32px;
