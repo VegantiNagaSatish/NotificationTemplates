@@ -3,8 +3,8 @@
     <div class="container">
       <div class="container-header d-flex justify-content-center align-center">
         <img
-          src="https://storage.googleapis.com/bfb-qa2/b2b-store-front-external-ui/latest/static/img/blibli-for-business-5aa317e3.svg"
-          alt="Image_Not_Found"
+          src="${imageURL}"
+          alt="Image_Loading_Failed"
           class="container-header-logo"
         />
       </div>
@@ -20,7 +20,7 @@
               <div class="main-details d-flex flex-direction-column">
                 <div class="main-details-heading">Halo, ${hoiName}!</div>
                 <div class="main-details-content">
-                  {RM name} baru saja mendaftarkan perusahaan
+                  ${rmName} baru saja mendaftarkan perusahaan
                   <span class="main-details-content-bold">${userName}</span>
                   di Blibli for Business.
                 </div>
@@ -28,7 +28,7 @@
               <div class="navigation d-flex justify-content-center">
                 <a
                   class="navigation-link"
-                  href="https://business-blibli-qa2-gcp.gdn-app.com/rfqDetailPage/${rfqId}"
+                  href="${domainURL}/internal/preview/${orgName}"
                   target="_blank"
                   >Lihat pendaftaran</a
                 >
